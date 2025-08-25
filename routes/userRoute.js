@@ -1,4 +1,6 @@
 const express = require("express");
+require("dotenv").config();
+
 const multer = require("multer");
 const { register,verifyEmail,login } = require("../controllers/userController");
 

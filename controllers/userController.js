@@ -1,7 +1,8 @@
 const bcrypt = require("bcryptjs");
 const User = require("../models/userModel");
+require("dotenv").config();
 const cloudinary = require("../config/cloudinary");
-const sendEmail = require("../config/mailer"); // use sendEmail function
+const sendEmail = require("../config/mailer"); 
 const { v4: uuidv4 } = require("uuid");
 
 const register = async (req, res) => {
